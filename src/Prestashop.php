@@ -431,6 +431,7 @@ class Prestashop
         $query = [];
 
         $query = [
+            'ws_key' => $this->token(),
             'display' => $this->display ?
                 '['.implode(',', $this->display).']' : 'full',
         ];
