@@ -506,6 +506,7 @@ class Prestashop
     protected function query()
     {
         $query = [
+            'ws_key' => $this->token(),
             'display' => $this->display ?
                 "[" . implode(",", $this->display) . "]" : 'full',
         ];
